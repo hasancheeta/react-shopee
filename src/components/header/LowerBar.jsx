@@ -1,13 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const LowerBar = () => {
   return (
     <div className="lower-bar flex flex-row  flex-align-center">
       <section className="flex flex-row flex-space-between flex-align-center">
-        <div className="search">
-          <i className="fa fa-search"></i>
+        <div className="search flex flex-row flex-align-center">
+          <FontAwesomeIcon icon={faSearch} />
           <input type="search" className="search-bar" placeholder="search" />
         </div>
         <div className="lower-nav">

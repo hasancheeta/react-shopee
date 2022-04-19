@@ -231,6 +231,8 @@ section {
 }
 .search {
   width: 25%;
+  color: var(--green);
+  gap: 10px;
 }
 .lower-nav {
   width: 50%;
@@ -261,9 +263,7 @@ section {
   color: var(--green);
   text-transform: uppercase;
 }
-.search i {
-  color: var(--green);
-}
+
 .search-bar:focus {
   border-bottom: 3px solid var(--green);
 }
