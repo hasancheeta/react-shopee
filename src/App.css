@@ -264,7 +264,8 @@ section {
   text-transform: uppercase;
 }
 
-.search-bar:focus {
+.search-bar:focus,
+.search-bar:active {
   border-bottom: 3px solid var(--green);
 }
 /*Header hero*/
