@@ -246,11 +246,9 @@ section {
 }
 .rating {
   width: 25%;
-}
-.rating i {
-  margin-left: 20px;
-  font-size: 18px;
   color: var(--green);
+  gap: 10px;
+  font-size: 20px;
 }
 .search-bar {
   height: 25px;

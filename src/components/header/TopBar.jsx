@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const TopBar = () => {
   return (
@@ -6,9 +9,17 @@ const TopBar = () => {
       <section className="flex flex-row flex-space-between flex-align-center">
         <div className="emails">
           <a className="email" href="mailto:test@domain.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{ "margin-right": "5px" }}
+            />
             test@domain.com
           </a>
           <a className="email" href="mailto:test@domain.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{ "margin-right": "5px" }}
+            />
             test@domain.com
           </a>
         </div>
@@ -16,12 +27,20 @@ const TopBar = () => {
           <ul className="flex flex-row flex-space-between flex-align-center">
             <li className="menu-item">
               <a href="#">
-                <i className="fa fa-user"></i>My Profile
+                <FontAwesomeIcon
+                  icon={faUser}
+                  style={{ "margin-right": "5px" }}
+                />
+                My Profile
               </a>
             </li>
             <li className="menu-item">
               <a href="#">
-                <i className="fa fa-heart"></i>Favourites
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  style={{ "margin-right": "5px" }}
+                />
+                Favourites
               </a>
             </li>
           </ul>
