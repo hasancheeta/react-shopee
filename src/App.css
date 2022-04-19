@@ -1,38 +1,347 @@
-.App {
-  text-align: center;
+/* START Global Styles and Classess*/
+/*Global Colours*/
+:root {
+  --green: #01ba98;
+  --green-dark: #00987c;
+  --pink: #ff0076;
+  --blue: #1200c6;
+  --grey: #979797;
+  --orange: #fe7800;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li {
+  list-style-type: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+section {
+  width: 1440px;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+.flex {
   display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
   flex-direction: column;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-space-around {
+  justify-content: space-around;
+}
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-align-start {
+  align-items: flex-start;
+}
+.flex-align-end {
+  align-items: flex-end;
+}
+
+/*Headings*/
+.h-lg {
+  min-height: 70px;
+  border: solid 8px;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.h-pink {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+/*END Global Styles and Classes*/
+.container {
+  margin: auto;
+}
+.header {
+  margin: auto;
+  width: 100%;
+}
+/*Top bar Style*/
+.top-bar {
+  width: 100%;
+  min-height: 50px;
+  background-color: var(--green-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.emails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+.email {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.top-nav {
+  width: 20%;
+}
+.top-nav ul li {
+  text-transform: capitalize;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.top-nav ul li a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.top-nav ul li .fa {
+  margin-right: 5px;
+  font-size: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Midle Bar Styles*/
+.middle-bar {
+  width: 100%;
+  background-color: var(--green);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+}
+.middle-nav {
+  width: 40%;
+}
+.middle-nav ul li {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.middle-nav ul li a {
+  color: white;
+}
+.middle-nav ul li .fa {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.contact-buttons {
+  width: 30%;
+}
+.call-btn-parent {
+  width: 60%;
+}
+.call-btn-inner {
+  position: absolute;
+  border: solid 2px white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 7px;
+  right: 7px;
+  width: 102%;
+  background-color: var(--green);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.call-btn-outer {
+  border: solid white 2px;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+.quote-btn-parent {
+  width: 30%;
+}
+.quote-btn-inner {
+  position: absolute;
+  border: solid 2px white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 7px;
+  right: 7px;
+  width: 102%;
+  background-color: var(--green);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.quote-btn-outer {
+  border: solid white 2px;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+/*Lower bar styles*/
+.lower-bar {
+  min-height: 70px;
+  background-color: white;
+}
+.search {
+  width: 25%;
+}
+.lower-nav {
+  width: 50%;
+}
+.menu-item {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+.menu-item a {
+  color: var(--green);
+}
+.rating {
+  width: 25%;
+}
+.rating i {
+  margin-left: 20px;
+  font-size: 18px;
+  color: var(--green);
+}
+.search-bar {
+  height: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green);
+  border: none;
+}
+.search-bar::placeholder {
+  color: var(--green);
+  text-transform: uppercase;
+}
+.search i {
+  color: var(--green);
+}
+.search-bar:focus {
+  border-bottom: 3px solid var(--green);
+}
+/*Header hero*/
+.hero-section {
+  width: 100%;
+  background-image: linear-gradient(180deg, #f1efff 0%, #fffdfc 100%);
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col1,
+.col2 {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+/* .col1 {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+} */
+.col2 img {
+  margin-bottom: -124px;
+  width: 100%;
+}
+.rating2 {
+  gap: 20px;
+}
+.rating2 i {
+  font-size: 25px;
+  color: var(--blue);
+}
+.full-width-cta {
+  width: 100%;
+  background-color: var(--green);
+  min-height: 120px;
+  margin-top: -50px;
+  z-index: 1;
+}
+.cta-col1 {
+  width: 70%;
+}
+.cta-col2 {
+  width: 30%;
+}
+.cta-point {
+  width: 25%;
+  gap: 15px;
+}
+.cta-heading {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 1px;
+}
+.dual-btn-parent {
+  border: solid 5px white;
+  width: 293px;
+  height: 55px;
+  position: relative;
+}
+.dual-btn-child {
+  width: 293px;
+  height: 55px;
+  border: inherit;
+  background-color: white;
+  color: var(--pink);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
 }
