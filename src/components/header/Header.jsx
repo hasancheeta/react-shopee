@@ -4,7 +4,6 @@ import React from "react";
 import TopBar from "./TopBar";
 import MiddleBar from "./MiddleBar";
 import LowerBar from "./LowerBar";
-import HeroSection from "./HeroSection";
 
 const Header = () => {
   return (
@@ -12,7 +11,6 @@ const Header = () => {
       <TopBar />
       <MiddleBar />
       <LowerBar />
-      <HeroSection />
     </header>
   );
 };
