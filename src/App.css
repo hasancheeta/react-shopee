@@ -343,3 +343,50 @@ section {
   right: 8px;
   bottom: 8px;
 }
+
+#footer {
+  margin-top: 90px;
+}
+.footer-heading {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+.footer-menu {
+  gap: 10px;
+}
+.footer-menu .menu-item a {
+  text-transform: capitalize;
+  color: var(--grey);
+}
+.footer-bottom-bar {
+  background-color: var(--pink);
+  height: 85px;
+  margin-top: 65px;
+}
+.footer-bar-inner {
+  width: 80%;
+}
+.privacy-links {
+  gap: 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: white;
+}
+.privacy-links a:hover {
+  color: var(--green);
+}
+.social-icons {
+  gap: 40px;
+  color: white;
+  font-size: 20px;
+}
+.social-icons .icon:hover {
+  color: var(--green);
+  cursor: pointer;
+}
