@@ -294,11 +294,10 @@ section {
 }
 .rating2 {
   gap: 20px;
-}
-.rating2 i {
-  font-size: 25px;
   color: var(--blue);
+  font-size: 25px;
 }
+
 .full-width-cta {
   width: 100%;
   background-color: var(--green);

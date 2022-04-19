@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
@@ -16,11 +18,11 @@ const HeroSection = () => {
             supplier.
           </p>
           <div class="rating2 flex flex-row flex-justify-start">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} />
           </div>
         </div>
         <div class="col2">
