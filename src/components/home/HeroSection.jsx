@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div class="col2">
-          <img src="./images/header-element-pens.png" />
+          <img src="/images/header-element-pens.png" />
         </div>
       </section>
     </div>

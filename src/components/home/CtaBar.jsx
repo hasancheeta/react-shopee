@@ -1,4 +1,5 @@
 import React from "react";
+import DualButton from "../global/DualButton";
 
 const CtaBar = () => {
   return (
@@ -61,13 +62,7 @@ const CtaBar = () => {
           </div>
         </div>
         <div class="cta-col2 flex flex-row flex-justify-center">
-          <div class="cta-dual-btn dual-btn-parent">
-            <div class="dual-btn-child flex flex-align-center flex-justify-center">
-              <span class="btn-text">
-                <a href="#">View All Products</a>
-              </span>
-            </div>
-          </div>
+          <DualButton />
         </div>
       </section>
     </div>
