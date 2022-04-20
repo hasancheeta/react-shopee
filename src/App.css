@@ -284,11 +284,7 @@ section {
   gap: 10px;
   flex-direction: column;
 }
-/* .col1 {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-} */
+
 .col2 img {
   margin-bottom: -124px;
   width: 100%;
@@ -334,7 +330,7 @@ section {
   height: 55px;
   border: inherit;
   background-color: white;
-  color: var(--pink);
+  color: inherit;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;

@@ -7,7 +7,7 @@ import LowerBar from "./LowerBar";
 
 const Header = () => {
   return (
-    <header class="header">
+    <header className="header">
       <TopBar />
       <MiddleBar />
       <LowerBar />

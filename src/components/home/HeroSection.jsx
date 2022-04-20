@@ -4,10 +4,10 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
-    <div class="hero-section">
-      <section class="flex flex-row flex-space-between">
-        <div class="col1">
-          <h1 class="h-lg h-pink">the home of promotional products</h1>
+    <div className="hero-section">
+      <section className="flex flex-row flex-space-between">
+        <div className="col1">
+          <h1 className="h-lg h-pink">the home of promotional products</h1>
           <p>
             If you're looking to buy promotional products that are of
             exceptional quality, Bulk Branded is the place to shop. We're among
@@ -17,7 +17,7 @@ const HeroSection = () => {
             represent your business, Bulk Branded is your go-to choice of
             supplier.
           </p>
-          <div class="rating2 flex flex-row flex-justify-start">
+          <div className="rating2 flex flex-row flex-justify-start">
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
@@ -25,7 +25,7 @@ const HeroSection = () => {
             <FontAwesomeIcon icon={faStar} />
           </div>
         </div>
-        <div class="col2">
+        <div className="col2">
           <img src="/images/header-element-pens.png" />
         </div>
       </section>

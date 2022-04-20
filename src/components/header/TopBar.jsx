@@ -9,17 +9,11 @@ const TopBar = () => {
       <section className="flex flex-row flex-space-between flex-align-center">
         <div className="emails">
           <a className="email" href="mailto:test@domain.com">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              style={{ "margin-right": "5px" }}
-            />
+            <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "5px" }} />
             test@domain.com
           </a>
           <a className="email" href="mailto:test@domain.com">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              style={{ "margin-right": "5px" }}
-            />
+            <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "5px" }} />
             test@domain.com
           </a>
         </div>
@@ -27,10 +21,7 @@ const TopBar = () => {
           <ul className="flex flex-row flex-space-between flex-align-center">
             <li className="menu-item">
               <a href="#">
-                <FontAwesomeIcon
-                  icon={faUser}
-                  style={{ "margin-right": "5px" }}
-                />
+                <FontAwesomeIcon icon={faUser} style={{ marginRight: "5px" }} />
                 My Profile
               </a>
             </li>
@@ -38,7 +29,7 @@ const TopBar = () => {
               <a href="#">
                 <FontAwesomeIcon
                   icon={faHeart}
-                  style={{ "margin-right": "5px" }}
+                  style={{ marginRight: "5px" }}
                 />
                 Favourites
               </a>

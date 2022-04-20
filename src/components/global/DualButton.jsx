@@ -1,10 +1,10 @@
 import React from "react";
 
-const DualButton = () => {
+const DualButton = ({ style }) => {
   return (
-    <div class="cta-dual-btn dual-btn-parent">
-      <div class="dual-btn-child flex flex-align-center flex-justify-center">
-        <span class="btn-text">
+    <div className="dual-btn-parent" style={style || {}}>
+      <div className="dual-btn-child flex flex-align-center flex-justify-center">
+        <span className="btn-text">
           <a href="#">View All Products</a>
         </span>
       </div>

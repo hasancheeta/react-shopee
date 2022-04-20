@@ -3,10 +3,10 @@ import DualButton from "../global/DualButton";
 
 const CtaBar = () => {
   return (
-    <div class="full-width-cta flex flex-column flex-justify-center">
-      <section class="flex flex-row flex-align-center flex-space-between">
-        <div class="cta-col1 flex flex-row flex-align-center flex-space-between">
-          <div class="cta-point flex flex-row flex-align-center ">
+    <div className="full-width-cta flex flex-column flex-justify-center">
+      <section className="flex flex-row flex-align-center flex-space-between">
+        <div className="cta-col1 flex flex-row flex-align-center flex-space-between">
+          <div className="cta-point flex flex-row flex-align-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -19,12 +19,12 @@ const CtaBar = () => {
                 fill="white"
               ></path>
             </svg>
-            <h2 class="cta-heading">
+            <h2 className="cta-heading">
               Show off your brand <br />
               the right way
             </h2>
           </div>
-          <div class="cta-point flex flex-row flex-align-center">
+          <div className="cta-point flex flex-row flex-align-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="33"
@@ -37,12 +37,12 @@ const CtaBar = () => {
                 fill="white"
               ></path>
             </svg>
-            <h2 class="cta-heading">
+            <h2 className="cta-heading">
               Customise your <br />
               merchandise
             </h2>
           </div>
-          <div class="cta-point flex flex-row flex-align-center ">
+          <div className="cta-point flex flex-row flex-align-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -55,14 +55,14 @@ const CtaBar = () => {
                 fill="white"
               ></path>
             </svg>
-            <h2 class="cta-heading">
+            <h2 className="cta-heading">
               Low cost <br />
               shipping
             </h2>
           </div>
         </div>
-        <div class="cta-col2 flex flex-row flex-justify-center">
-          <DualButton />
+        <div className="cta-col2 flex flex-row flex-justify-center">
+          <DualButton style={{ color: "var(--pink)" }} />
         </div>
       </section>
     </div>
