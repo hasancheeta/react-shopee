@@ -1,5 +1,5 @@
 import React from "react";
-import DualButton from "../global/DualButton";
+import DualButton from "../Global/DualButton";
 
 const CtaBar = () => {
   return (

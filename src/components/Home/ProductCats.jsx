@@ -1,9 +1,9 @@
 import React from "react";
 
 //import components
-import Heading from "../global/Heading";
-import Spacer from "../global/Spacer";
-import DualButton from "../global/DualButton";
+import Heading from "../Global/Heading";
+import Spacer from "../Global/Spacer";
+import DualButton from "../Global/DualButton";
 
 const ProductCats = () => {
   return (
