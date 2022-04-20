@@ -92,6 +92,10 @@ section {
   color: var(--pink);
   border-color: var(--pink);
 }
+.h-orange {
+  color: var(--orange);
+  border-color: var(--orange);
+}
 
 /*END Global Styles and Classes*/
 .container {
@@ -385,4 +389,38 @@ section {
 .social-icons .icon:hover {
   color: var(--green);
   cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+.grid-item {
+  width: 250px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url("../public/images/pen-product.png") no-repeat;
+  background-size: cover;
+
+  position: relative;
+  padding: 20px;
+}
+.background-overlay {
+  background-image: linear-gradient(359.68deg, #9a999933 0%, #c4c4c400 55%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-title {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 800;
+}
+.dual-green {
+  border-color: var(--green);
+  color: var(--green);
 }

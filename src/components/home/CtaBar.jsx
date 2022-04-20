@@ -62,7 +62,11 @@ const CtaBar = () => {
           </div>
         </div>
         <div className="cta-col2 flex flex-row flex-justify-center">
-          <DualButton style={{ color: "var(--pink)" }} />
+          <DualButton
+            style={{ color: "var(--pink)" }}
+            title={"View all products"}
+            url={"#"}
+          />
         </div>
       </section>
     </div>
