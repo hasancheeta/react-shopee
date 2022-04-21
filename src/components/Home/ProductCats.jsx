@@ -8,7 +8,7 @@ import DualButton from "../Global/DualButton";
 const ProductCats = () => {
   return (
     <div>
-      <Spacer style={{ height: "120px" }} />
+      <Spacer height={120} />
       <div className="product-categories">
         <section className="flex flex-column flex-align-center">
           <Heading
@@ -17,7 +17,7 @@ const ProductCats = () => {
             classes={"h-lg h-orange"}
           />
 
-          <Spacer style={{ height: "70px" }} />
+          <Spacer height={70} />
           <div
             className="products-grid grid"
             style={{
@@ -59,7 +59,7 @@ const ProductCats = () => {
               <h3 className="product-title">pens</h3>
             </div>
           </div>
-          <Spacer style={{ height: "40px" }} />
+          <Spacer height={40} />
 
           <DualButton
             title={"visit shop"}
