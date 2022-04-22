@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MiddleBar = () => {
   return (
@@ -12,7 +13,7 @@ const MiddleBar = () => {
         <div className="middle-nav">
           <ul className="flex flex-row flex-space-evenly flex-align-center">
             <li className="menu-item">
-              <a href="#">store</a>
+              <Link to="/shop">Shop</Link>
             </li>
             <li className="menu-item">
               <a href="#">gallery</a>

@@ -5,21 +5,50 @@ import Heading from "../Global/Heading";
 const Quote = () => {
   return (
     <div className="quote-section">
-      <section className="flex flex-row flex-align-center flex-space-around">
+      <section
+        className="flex flex-row flex-align-center flex-justify-center"
+        style={{ gap: 50 }}
+      >
         <div className="quote-left">
           <form action="" method="post" id="quote-form">
             <h3 className="form-heading">your details</h3>
-            <input type={"text"} id="first-name" placeholder="First Name" />
-            <input type={"text"} id="last-name" placeholder="Last Name" />
-            <input type={"email"} id="email" placeholder="Email" />
-            <input type={"text"} id="phone" placeholder="Phone" />
-            <input type={"text"} id="company-name" placeholder="Company Name" />
+            <input
+              className="field-left"
+              type={"text"}
+              id="first-name"
+              placeholder="First Name"
+            />
+            <input
+              className="field-right"
+              type={"text"}
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <input
+              className="field-left"
+              type={"email"}
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              className="field-right"
+              type={"text"}
+              id="phone"
+              placeholder="Phone"
+            />
+            <input
+              className="field-left"
+              type={"text"}
+              id="company-name"
+              placeholder="Company Name"
+            />
+            <br />
             <span className="form-message">
               We service orders from 25-5000+ units.
             </span>
-            <Spacer height={50} />
+            <Spacer style={{ height: 50 }} />
             <h3 className="form-heading">colours in your logo</h3>
-            <div className="checkboxes-group">
+            <div className="checkboxes-group flex flex-row flex-justify-start">
               <label>
                 <input type={"checkbox"} value="1-colour" id="checkbox-1" />
                 1Colour
@@ -44,7 +73,10 @@ const Quote = () => {
             <span className="form-message">
               drag here or <b>browse</b>
             </span>
+            <br />
             <input type={"file"} id="upload-artword" />
+            <br />
+            <br />
             <label>
               <input
                 type={"checkbox"}
@@ -53,6 +85,8 @@ const Quote = () => {
               />
               I consent to being contacted using these details.
             </label>
+            <br />
+            <br />
             <input
               type={"submit"}
               value="click here to submit"
@@ -65,7 +99,7 @@ const Quote = () => {
             style={{ borderColor: "var(--green)", color: "var(--green)" }}
             title={"get a free quote"}
           />
-          <Spacer height={160} />
+          <Spacer height={60} />
           <p>
             Fill in our form and let us know your requirements. If you upload
             artwork, we will send over a free mock-up to showcase your work on
@@ -74,8 +108,9 @@ const Quote = () => {
             products to your exact specification.
           </p>
           <Spacer height={50} />
-          <h3>GOT MORE QUESTIONS?</h3>
+          <span style={{ fontSize: 20 }}>GOT MORE QUESTIONS?</span>
           <Spacer height={30} />
+          <span style={{ fontSize: 25 }}>0333 567 1245</span>
         </div>
       </section>
     </div>

@@ -7,6 +7,7 @@
   --blue: #1200c6;
   --grey: #979797;
   --orange: #fe7800;
+  --creme: #f4f2f2;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -423,4 +424,83 @@ section {
 .dual-green {
   border-color: var(--green);
   color: var(--green);
+}
+.quote-section {
+  width: 100%;
+}
+.quote-left {
+  width: 615px;
+  background-color: var(--creme);
+  padding: 80px 50px 70px 50px;
+}
+.quote-right {
+  width: 450px;
+}
+.form-heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.field-left {
+  width: 45%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.field-right {
+  width: 45%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+input[type="text"],
+input[type="email"] {
+  height: 30px;
+  padding-left: 12px;
+  border: 0;
+  color: #979797;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+input::placeholder {
+  color: var(--grey);
+  letter-spacing: 0.7px;
+}
+label {
+  color: var(--grey);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.checkboxes-group {
+  gap: 50px;
+}
+.form-message {
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: var(--grey);
+}
+#submit-form {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  background-color: transparent;
+  border: solid 3px var(--pink);
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pink);
+  cursor: pointer;
+}
+.product-item {
+  position: relative;
+  width: 240px;
+  background-color: white;
+}
+.shop_container {
+  background: url("/public/images/store-categories-bg-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
