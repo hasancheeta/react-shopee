@@ -6,9 +6,9 @@ const MiddleBar = () => {
     <div className="middle-bar">
       <section className="flex flex-row flex-space-between flex-align-center">
         <div className="logo">
-          <a href="#">
+          <Link to={"/"}>
             <img src="./images/logo-light.svg" />
-          </a>
+          </Link>
         </div>
         <div className="middle-nav">
           <ul className="flex flex-row flex-space-evenly flex-align-center">
