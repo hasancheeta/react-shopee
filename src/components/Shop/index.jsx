@@ -3,6 +3,8 @@ import React from "react";
 //import query(s)
 import { useQuery, useLazyQuery } from "@apollo/client";
 import { GET_ALL_PRODUCTS } from "../../Graphql/Queries";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 //import components
 import Heading from "../Global/Heading";
@@ -15,6 +17,20 @@ const Shop = () => {
     loading: productsLoading,
     error: productsError,
   } = useQuery(GET_ALL_PRODUCTS);
+
+  //emit a toast
+  const notify = () => {
+    toast("🦄 Added to the cart!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   console.log(products, productsLoading, productsError);
   return (
     <div className="shop_container flex flex-row flex-space-between">
@@ -29,10 +45,23 @@ const Shop = () => {
         <Spacer height={70} />
         <div className="products-grid grid">
           {products?.products?.data?.map((product) => {
-            return <ProductItem product={product} key={product.id} />;
+            return (
+              <ProductItem notify={notify} product={product} key={product.id} />
+            );
           })}
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 };

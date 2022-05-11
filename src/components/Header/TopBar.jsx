@@ -1,9 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import {
+  faEnvelope,
+  faUser,
+  faHeart,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
 
 const TopBar = () => {
+  // console.log(store.getState().cart);
+  const myCart = useSelector((state) => state.cart);
+  let totalQty = myCart.cartTotalQuantity;
+
   return (
     <div className="top-bar">
       <section className="flex flex-row flex-space-between flex-align-center">
@@ -33,6 +45,15 @@ const TopBar = () => {
                 />
                 Favourites
               </a>
+            </li>
+            <li className="menu-item" style={{ position: "relative" }}>
+              <Link to={"/cart"}>
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  style={{ marginRight: "5px" }}
+                />
+                <span className="qty-badge">{totalQty}</span>
+              </Link>
             </li>
           </ul>
         </div>

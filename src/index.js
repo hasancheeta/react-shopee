@@ -18,6 +18,7 @@ import {
 
 //import components
 import Shop from "./components/Shop";
+import Cart from "./components/Shop/Cart";
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -37,6 +38,7 @@ root.render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
           <Footer />
         </BrowserRouter>

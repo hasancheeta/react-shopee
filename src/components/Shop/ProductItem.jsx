@@ -6,12 +6,18 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { AddTocart } from "../../Redux/cartSlice";
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, notify }) => {
   const { cartItems } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   function limit(string = "", limit = 0) {
     return string.substring(0, limit);
   }
+  //handle add to cart onclick
+  const handleAddToCartClick = () => {
+    dispatch(AddTocart(product));
+    notify();
+  };
+
   let limitedTitle = limit(product?.attributes?.Title, 25);
   let formattedTitle = limitedTitle + " ...";
 
@@ -28,10 +34,7 @@ const ProductItem = ({ product }) => {
       </div>
       <div className="favourite">
         <FontAwesomeIcon icon={faHeart} />
-        <FontAwesomeIcon
-          icon={faCartPlus}
-          onClick={() => dispatch(AddTocart(product))}
-        />
+        <FontAwesomeIcon icon={faCartPlus} onClick={handleAddToCartClick} />
       </div>
     </div>
   );

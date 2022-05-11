@@ -20,6 +20,12 @@ export const cartSlice = createSlice({
       } else {
         state.cartItems.push(tempData);
       }
+      let totalQuantity = 0;
+
+      for (let items of state.cartItems) {
+        totalQuantity += items.cartQuantity;
+      }
+      state.cartTotalQuantity = totalQuantity;
     },
   },
 });
